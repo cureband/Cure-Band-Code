@@ -295,150 +295,149 @@ if bpm < 135:
                                                                                                                                                                                                                                                                                                                                                                                                         os.system("./home/pi/Desktop/Scripts/135.sh")
                                                                                                                                                                                                                                                                                                                                                                                                     
     else:
-
+    	
 else:
-
-	if bpm < 180:
-		if bpm == 135:
-			os.system("./home/pi/Desktop/Scripts/135.sh")
-		else:
-			if bpm == 136:
-				os.system("./home/pi/Desktop/Scripts/136.sh")
-			else:
-				if bpm == 137:
-					os.system("./home/pi/Desktop/Scripts/137.sh")
-				else:
-					if bpm == 138:
-						os.system("./home/pi/Desktop/Scripts/138.sh")
-					else:
-						if bpm == 139:
-							os.system("./home/pi/Desktop/Scripts/139.sh")
-						else:
-							if bpm == 140:
-								os.system("./home/pi/Desktop/Scripts/140.sh")
-							else:
-								if bpm == 141:
-									os.system("./home/pi/Desktop/Scripts/141.sh")
-								else:
-									if bpm == 142:
-										os.system("./home/pi/Desktop/Scripts/142.sh")
-									else:
-										if bpm == 143:
-											os.system("./home/pi/Desktop/Scripts/143.sh")
-										else:
-											if bpm == 144:
-												os.system("./home/pi/Desktop/Scripts/144.sh")
-											else:
-												if bpm == 145:
-													os.system("./home/pi/Desktop/Scripts/145.sh")
-												else:
-													if bpm == 146:
-														os.system("./home/pi/Desktop/Scripts/146.sh")
-													else:
-														if bpm == 147:
-															os.system("./home/pi/Desktop/Scripts/147.sh")
-														else:
-															if bpm == 148:
-																os.system("./home/pi/Desktop/Scripts/148.sh")
-															else:
-																if bpm == 149:
-																	os.system("./home/pi/Desktop/Scripts/149.sh")
-																else:
-																	if bpm == 150:
-																		os.system("./home/pi/Desktop/Scripts/150.sh")
-																	else:
-																		if bpm == 151:
-																			os.system("./home/pi/Desktop/Scripts/151.sh")
-																		else:
-																			if bpm == 152:
-																				os.system("./home/pi/Desktop/Scripts/152.sh")
-																			else:
-																				if bpm == 153:
-																					os.system("./home/pi/Desktop/Scripts/153.sh")
-																				else:
-																					if bpm == 154:
-																						os.system("./home/pi/Desktop/Scripts/154.sh")
-																					else:
-																						if bpm == 155:
-																							os.system("./home/pi/Desktop/Scripts/155.sh")
-																						else:
-																							if bpm == 156:
-																								os.system("./home/pi/Desktop/Scripts/156.sh")
-																							else:
-																								if bpm == 157:
-																									os.system("./home/pi/Desktop/Scripts/157.sh")
-																								else:
-																									if bpm == 158:
-																										os.system("./home/pi/Desktop/Scripts/158.sh")
-																									else:
-																										if bpm == 159:
-																											os.system("./home/pi/Desktop/Scripts/159.sh")
-																										else:
-																											if bpm == 160:
-																												os.system("./home/pi/Desktop/Scripts/160.sh")
-																											else:
-																												if bpm == 161:
-																													os.system("./home/pi/Desktop/Scripts/161.sh")
-																												else:
-																													if bpm == 162:
-																														os.system("./home/pi/Desktop/Scripts/162.sh")
-																													else:
-																														if bpm == 163:
-																															os.system("./home/pi/Desktop/Scripts/163.sh")
-																														else:
-																															if bpm == 164:
-																																os.system("./home/pi/Desktop/Scripts/164.sh")
-																															else:
-																																if bpm == 165:
-																																	os.system("./home/pi/Desktop/Scripts/165.sh")
-																																else:
-																																	if bpm == 166:
-																																		os.system("./home/pi/Desktop/Scripts/166.sh")
-																																	else:
-																																		if bpm == 167:
-																																			os.system("./home/pi/Desktop/Scripts/167.sh")
-																																		else:
-																																			if bpm == 168:
-																																				os.system("./home/pi/Desktop/Scripts/168.sh")
-																																			else:
-																																				if bpm == 169:
-																																					os.system("./home/pi/Desktop/Scripts/169.sh")
-																																				else:
-																																					if bpm == 170:
-																																						os.system("./home/pi/Desktop/Scripts/170.sh")
-																																					else:
-																																						if bpm == 171:
-																																							os.system("./home/pi/Desktop/Scripts/171.sh")
-																																						else:
-																																							if bpm == 172:
-																																								os.system("./home/pi/Desktop/Scripts/172.sh")
-																																							else:
-																																								if bpm == 173:
-																																									os.system("./home/pi/Desktop/Scripts/173.sh")
-																																								else:
-																																									if bpm == 174:
-																																										os.system("./home/pi/Desktop/Scripts/174.sh")
-																																									else:
-																																										if bpm == 175:
-																																											os.system("./home/pi/Desktop/Scripts/175.sh")
-																																										else:
-																																											if bpm == 176:
-																																												os.system("./home/pi/Desktop/Scripts/176.sh")
-																																											else:
-																																												if bpm == 177:
-																																													os.system("./home/pi/Desktop/Scripts/177.sh")
-																																												else:
-																																													if bpm == 178:
-																																														os.system("./home/pi/Desktop/Scripts/178.sh")
-																																													else:
-																																														if bpm == 179:
-																																															os.system("./home/pi/Desktop/Scripts/179.sh")
-																																														else:
-																																															if bpm == 180:
-																																																os.system("./home/pi/Desktop/Scripts/180.sh")
-
-
+    	if bpm = 135:
+    		os.system("./home/pi/Desktop/Scripts/135.sh")
+    	else:
+    		if bpm = 136:
+    			os.system("./home/pi/Desktop/Scripts/136.sh")
+    		else:
+    			if bpm = 137:
+    				os.system("./home/pi/Desktop/Scripts/137.sh")
+    			else:
+    				if bpm = 138:
+    					os.system("./home/pi/Desktop/Scripts/138.sh")
+    				else:
+    					if bpm = 139:
+    						os.system("./home/pi/Desktop/Scripts/139.sh")
+    					else:
+    						if bpm = 140:
+    							os.system("./home/pi/Desktop/Scripts/140.sh")
+    						else:
+    							if bpm = 141:
+    								os.system("./home/pi/Desktop/Scripts/141.sh")
+    							else:
+    								if bpm = 142:
+    									os.system("./home/pi/Desktop/Scripts/142.sh")
+    								else:
+    									if bpm = 143:
+    										os.system("./home/pi/Desktop/Scripts/143.sh")
+    									else:
+    										if bpm = 144:
+    											os.system("./home/pi/Desktop/Scripts/144.sh")
+    										else:
+    											if bpm = 145:
+    												os.system("./home/pi/Desktop/Scripts/145.sh")
+    											else:
+    												if bpm = 146:
+    													os.system("./home/pi/Desktop/Scripts/146.sh")
+    												else:
+    													if bpm = 147:
+    														os.system("./home/pi/Desktop/Scripts/147.sh")
+    													else:
+    														if bpm = 148:
+    															os.system("./home/pi/Desktop/Scripts/148.sh")
+    														else:
+    															if bpm = 149:
+    																os.system("./home/pi/Desktop/Scripts/149.sh")
+    															else:
+    																if bpm = 150:
+    																	os.system("./home/pi/Desktop/Scripts/150.sh")
+    																else:
+    																	if bpm = 151:
+    																		os.system("./home/pi/Desktop/Scripts/151.sh")
+    																	else:
+    																		if bpm = 152:
+    																			os.system("./home/pi/Desktop/Scripts/152.sh")
+    																		else:
+    																			if bpm = 153:
+    																				os.system("./home/pi/Desktop/Scripts/153.sh")
+    																			else:
+    																				if bpm = 154:
+    																					os.system("./home/pi/Desktop/Scripts/154.sh")
+    																				else:
+    																					if bpm = 155:
+    																						os.system("./home/pi/Desktop/Scripts/155.sh")
+    																					else:
+    																						if bpm = 156:
+    																							os.system("./home/pi/Desktop/Scripts/156.sh")
+    																						else:
+    																							if bpm = 157:
+    																								os.system("./home/pi/Desktop/Scripts/157.sh")
+    																							else:
+    																								if bpm = 158:
+    																									os.system("./home/pi/Desktop/Scripts/158.sh")
+    																								else:
+    																									if bpm = 159:
+    																										os.system("./home/pi/Desktop/Scripts/159.sh")
+    																									else:
+    																										if bpm = 160:
+    																											os.system("./home/pi/Desktop/Scripts/160.sh")
+    																										else:
+    																											if bpm = 161:
+    																												os.system("./home/pi/Desktop/Scripts/161.sh")
+    																											else:
+    																												if bpm = 162:
+    																													os.system("./home/pi/Desktop/Scripts/162.sh")
+    																												else:
+    																													if bpm = 163:
+    																														os.system("./home/pi/Desktop/Scripts/163.sh")
+    																													else:
+    																														if bpm = 164:
+    																															os.system("./home/pi/Desktop/Scripts/164.sh")
+    																														else:
+    																															if bpm = 165:
+    																																os.system("./home/pi/Desktop/Scripts/165.sh")
+    																															else:
+    																																if bpm = 166:
+    																																	os.system("./home/pi/Desktop/Scripts/166.sh")
+    																																else:
+    																																	if bpm = 167:
+    																																		os.system("./home/pi/Desktop/Scripts/167.sh")
+    																																	else:
+    																																		if bpm = 168:
+    																																			os.system("./home/pi/Desktop/Scripts/168.sh")
+    																																		else:
+    																																			if bpm = 169:
+    																																				os.system("./home/pi/Desktop/Scripts/169.sh")
+    																																			else:
+    																																				if bpm = 170:
+    																																					os.system("./home/pi/Desktop/Scripts/170.sh")
+    																																				else:
+    																																					if bpm = 171:
+    																																						os.system("./home/pi/Desktop/Scripts/171.sh")
+    																																					else:
+    																																						if bpm = 172:
+    																																							os.system("./home/pi/Desktop/Scripts/172.sh")
+    																																						else:
+    																																							if bpm = 173:
+    																																								os.system("./home/pi/Desktop/Scripts/173.sh")
+    																																							else:
+    																																								if bpm = 174:
+    																																									os.system("./home/pi/Desktop/Scripts/174.sh")
+    																																								else:
+    																																									if bpm = 175:
+    																																										os.system("./home/pi/Desktop/Scripts/175.sh")
+    																																									else:
+    																																										if bpm = 176:
+    																																											os.system("./home/pi/Desktop/Scripts/176.sh")
+    																																										else:
+    																																											if bpm = 177:
+    																																												os.system("./home/pi/Desktop/Scripts/177.sh")
+    																																											else:
+    																																												if bpm = 178:
+    																																													os.system("./home/pi/Desktop/Scripts/178.sh")
+    																																												else:
+    																																													if bpm = 179:
+    																																														os.system("./home/pi/Desktop/Scripts/179.sh")
+    																																													else:
+    																																														if bpm = 180:
+    																																															os.system("./home/pi/Desktop/Scripts/180.sh")
+    											
+	
 
 
-	else:
+
+
 
