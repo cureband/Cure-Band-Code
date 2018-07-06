@@ -1,7 +1,7 @@
 import time
 import os
 
-bpm = 161
+bpm = 41
 
 if bpm < 135:
     if bpm > 40:
