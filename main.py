@@ -1,10 +1,10 @@
 import time
 import os
 
-bpm = 41
+bpm = 151
 
 if 40 < bpm < 180:
-       os.system(f"./home/pi/Desktop/Scripts/{bpm}.sh")
-       
+    os.system("/home/pi/Desktop/Scripts/{}.sh".format(bpm))
+    
 else:
-       os.system(f"./home/pi/Desktop/Scripts/{bpm}.sh")
+     
