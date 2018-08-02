@@ -1,7 +1,11 @@
 import time
 import os
+import textnow
 
-bpm = 201
+EMAIL = ""
+PASSWORD = ""
+
+bpm = 151
 
 if 40 < bpm < 180:
     os.system("/home/pi/Desktop/Scripts/{}.sh".format(bpm))
@@ -84,7 +88,13 @@ else:
 
             if (bpm-bpm1)+(bpm2-bpm3)+(bpm4-bpm5)+(bpm6-bpm7)+(bpm8-bpm9) > 1000:
                 print("Cardic Arrest")
-
+                TN = textnow.Textnow(EMAIL, PASSWORD)
+                TN.login()
+                msgSend = TN.sendMessage("12025846935", "Message")
+                if msgSend != False: # Send Message
+                   print("Message sent. ID: %s" % msgSend)
+                # print TN.userInfo
+             
             else:
                 if (bpm-bpm1)+(bpm2-bpm3)+(bpm4-bpm5)+(bpm6-bpm7)+(bpm8-bpm9) < -1000:
 
@@ -144,11 +154,23 @@ else:
                 if (bpm12-bpm22)+(bpm32-bpm42)+(bpm52-bpm62)+(bpm72-bpm82)+(bpm92-bpm102) > 1000:
                     print("Cardic Arrest")
                 else:
-                    if (bpm12-bpm22)+(bpm32-bpm42)+(bpm52-bpm62)+(bpm72-bpm82)+(bpm92-bpm102) < -1000:
+                    if (bpm-bpm1)+(bpm2-bpm3)+(bpm4-bpm5)+(bpm6-bpm7)+(bpm8-bpm9) < -1000:
                         print("Cardic Arrest")
 
                     else:
                         print("All Good")
                         pass
-                   
+                              
+
+
+
+
+
+
+
+
+
+
+
+
 
