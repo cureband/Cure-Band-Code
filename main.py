@@ -1,7 +1,7 @@
 import time
 import os
 
-bpm = 151
+bpm = 201
 
 if 40 < bpm < 180:
     os.system("/home/pi/Desktop/Scripts/{}.sh".format(bpm))
@@ -144,23 +144,11 @@ else:
                 if (bpm12-bpm22)+(bpm32-bpm42)+(bpm52-bpm62)+(bpm72-bpm82)+(bpm92-bpm102) > 1000:
                     print("Cardic Arrest")
                 else:
-                    if (bpm-bpm1)+(bpm2-bpm3)+(bpm4-bpm5)+(bpm6-bpm7)+(bpm8-bpm9) < -1000:
+                    if (bpm12-bpm22)+(bpm32-bpm42)+(bpm52-bpm62)+(bpm72-bpm82)+(bpm92-bpm102) < -1000:
                         print("Cardic Arrest")
 
                     else:
                         print("All Good")
                         pass
-                              
-
-
-
-
-
-
-
-
-
-
-
-
+                   
 
