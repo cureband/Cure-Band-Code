@@ -1,169 +1,59 @@
-import time
 import os
-import textnow
+import time
+import serial
 
-EMAIL = ""
-PASSWORD = ""
+ser = serial.Serial('/dev/ttyACM0',9600)
+s = [0]
+while True:
+	read_serial=ser.readline()
+	s[0] = str(int (ser.readline(),16))
+	print s[0]
+	i[0] = int(s[0])
 
-bpm = 151
-
-if 40 < bpm < 180:
-    os.system("/home/pi/Desktop/Scripts/{}.sh".format(bpm))
-
-else:
-    time.sleep(1)
-    #Insert Read
-    bpm1 = 230
-
-    time.sleep(1)
-    #Insert Read
-    bpm2 = 230
-
-    time.sleep(1)
-    #Insert Read
-    bpm3 = 230
-
-    time.sleep(1)
-    #Insert Read
-    bpm4 = 230
+	if i[0]< 250:
+		os.system("sudo rm /home/pi/Desktop/rate.txt")
+		os.system("sudo echo -n "" > rate.txt")
+		with open("/home/pi/Desktop/rate.txt", "a") as f:
+			f.write("{}".format(s[0]))
 
 
-    time.sleep(1)
-    #Insert Read
-    bpm5 = 230
+	else:
+		read_serial=ser.readline()
+		s[1] = str(int (ser.readline(),16))
+		print (s[1])
+		i[1] = int(s[1])
 
-    if(bpm-bpm1)+(bpm2-bpm3)+(bpm4-bpm5) > 500:
-        print("Suspected Cardic Arrest")
-        #Play Sound
-        
-        time.sleep(1)
-	#Insert Read
-        bpm6 = 230
+		time.sleep(5)
 
-        time.sleep(1)
-	#Insert Read
-        bpm7 = 230
+		read_serial=ser.readline()
+		s[2] = str(int (ser.readline(),16))
+		print (s[2])
+		i[2] = int(s[2])
 
-        time.sleep(1)
-	#Insert Read
-        bpm8 = 230
+		time.sleep(5)
 
-        time.sleep(1)
-	#Insert Read
-        bpm9 = 230
+		read_serial=ser.readline()
+		s[3] = str(int (ser.readline(),16))
+		print (s[3])
+		i[3] = int(s[3])
 
-        if (bpm-bpm1)+(bpm2-bpm3)+(bpm4-bpm5)+(bpm6-bpm7)+(bpm8-bpm9) > 1000:
-            print("Cardic Arrest")
+		time.sleep(5)
 
-        else:
-            if (bpm-bpm1)+(bpm2-bpm3)+(bpm4-bpm5)+(bpm6-bpm7)+(bpm8-bpm9) < -1000:
+		read_serial=ser.readline()
+		s[4] = str(int (ser.readline(),16))
+		print (s[4])
+		i[4] = int(s[4])
 
-                print("Cardic Arrest")
-            
-            else:
-                print("No Problem")
-                pass
-            
+		time.sleep(5)
 
-    else:
-        if(bpm-bpm1)+(bpm2-bpm3)+(bpm4-bpm5) < -500:
-            print("Suspected Cardic Arrest")
-            #Play Sound
-        
-            time.sleep(1)
-            #Insert Read
-            bpm6 = 230
+		read_serial=ser.readline()
+		s[5] = str(int (ser.readline(),16))
+		print (s[5])
+		i[5] = int(s[5])
 
-            time.sleep(1)
-            #Insert Read
-            bpm7 = 230
-
-            time.sleep(1)
-            #Insert Read
-            bpm8 = 230
-
-            time.sleep(1)
-            #Insert Read
-            bpm9 = 230
-
-            if (bpm-bpm1)+(bpm2-bpm3)+(bpm4-bpm5)+(bpm6-bpm7)+(bpm8-bpm9) > 1000:
-                print("Cardic Arrest")
-                TN = textnow.Textnow(EMAIL, PASSWORD)
-                TN.login()
-                msgSend = TN.sendMessage("12025846935", "Message")
-                if msgSend != False: # Send Message
-                   print("Message sent. ID: %s" % msgSend)
-                # print TN.userInfo
-             
-            else:
-                if (bpm-bpm1)+(bpm2-bpm3)+(bpm4-bpm5)+(bpm6-bpm7)+(bpm8-bpm9) < -1000:
-
-                   print("Cardic Arrest")
-            
-                else:
-                    print("No Problem")
-                    pass
-
-        else:
-            print("No Suspected Cardic Attack At This Point To Check One More Time")
-
-            if 40 < bpm < 180:
-                print("All Good")
-
-            else:
-                time.sleep(1)
-		#Insert Read
-                bpm12 = 230
-
-                time.sleep(1)
-		#Insert Read
-                bpm22 = 230
-
-                time.sleep(1)
-		#Insert Read
-                bpm32 = 230
-
-                time.sleep(1)
-		#Insert Read
-                bpm42 = 230
-
-                time.sleep(1)
-		#Insert Read
-                bpm52 = 230
-
-                time.sleep(1)
-		#Insert Read
-                bpm62 = 230
-
-                time.sleep(1)
-		#Insert Read
-                bpm72 = 230
-
-                time.sleep(1)
-		#Insert Read
-                bpm82 = 230
-
-                time.sleep(1)
-		#Insert Read
-                bpm92 = 230
-
-                time.sleep(1)
-                #Insert Read
-                bpm102 = 230
-
-                if (bpm12-bpm22)+(bpm32-bpm42)+(bpm52-bpm62)+(bpm72-bpm82)+(bpm92-bpm102) > 1000:
-                    print("Cardic Arrest")
-                else:
-                    if (bpm-bpm1)+(bpm2-bpm3)+(bpm4-bpm5)+(bpm6-bpm7)+(bpm8-bpm9) < -1000:
-                        print("Cardic Arrest")
-
-                    else:
-                        print("All Good")
-                        pass
-                              
-
-
-
+		if i[1]+i[2]+i[3]+i[4]+i[5] > 1800:
+			print("Ventricular Fibrillation is suspected to be occuring at the Moment. Alerting Amublances NOW")
+			os.system("sudo python")#Insert python for text now
 
 
 
